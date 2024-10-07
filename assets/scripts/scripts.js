@@ -114,7 +114,7 @@ function blueFunction() {
  //Forest button - On hover
 
 buttonForest.addEventListener('mouseover', () => {
-    buttonForest.style.backgroundImage = "url('../assets/images/forest.avif')";
+    buttonForest.style.backgroundImage = "url('../images/forest.avif')";
     buttonForest.style.color = 'white';
 });
 
@@ -127,7 +127,7 @@ buttonForest.addEventListener('mouseout', () => {
 
 //Forest button - on Click 
 function forestFunction() {
-    bgBody.style.backgroundImage = "url('../assets/images/forest.avif')";
+    bgBody.style.backgroundImage = "url('../images/forest.avif')";
     bgBody.style.backgroundSize="cover";
     bgBody.style.backgroundRepeat="no-repeat";
     bgBody.style.color="white";
@@ -138,7 +138,7 @@ function forestFunction() {
   //Ocean button - On hover
 
   buttonOcean.addEventListener('mouseover', () => {
-    buttonOcean.style.backgroundImage = "url('../assets/images/ocean.avif')";
+    buttonOcean.style.backgroundImage = "url('../images/ocean.avif')";
     buttonOcean.style.color = 'white';
 });
 
@@ -151,7 +151,7 @@ buttonOcean.addEventListener('mouseout', () => {
 
 //Ocean button - on Click 
 function oceanFunction() {
-    bgBody.style.backgroundImage = "url('../assets/images/ocean.avif')";
+    bgBody.style.backgroundImage = "url('../images/ocean.avif')";
     bgBody.style.backgroundSize="cover";
     bgBody.style.backgroundRepeat="no-repeat";
     feedback.innerHTML =`<p>Background colour changed to Ocean!</p>`;
@@ -160,7 +160,7 @@ function oceanFunction() {
  //Universe button - On hover
 
    buttonUniverse.addEventListener('mouseover', () => {
-    buttonUniverse.style.backgroundImage = "url('../assets/images/universe.jpg')";
+    buttonUniverse.style.backgroundImage = "url('../images/universe.jpg')";
     buttonUniverse.style.color = 'white';
 });
 
@@ -173,7 +173,7 @@ buttonUniverse.addEventListener('mouseout', () => {
 
 //Universe button - on Click 
 function universeFunction() {
-    bgBody.style.backgroundImage = "url('../assets/images/universe.jpg')";
+    bgBody.style.backgroundImage = "url('../images/universe.jpg')";
     bgBody.style.backgroundSize="cover";
     bgBody.style.backgroundRepeat="no-repeat";
     bgBody.style.color="white";
@@ -184,7 +184,7 @@ function universeFunction() {
  //Autumn button - On hover
 
  buttonAutumn.addEventListener('mouseover', () => {
-    buttonAutumn.style.backgroundImage = "url('../assets/images/autumn.avif')";
+    buttonAutumn.style.backgroundImage = "url('../images/autumn.avif')";
     buttonAutumn.style.color = 'white';
 });
 
@@ -197,7 +197,7 @@ buttonAutumn.addEventListener('mouseout', () => {
 
 //Autumn button - on Click 
 function autumnFunction() {
-    bgBody.style.backgroundImage = "url('../assets/images/autumn.avif')";
+    bgBody.style.backgroundImage = "url('../images/autumn.avif')";
     bgBody.style.backgroundSize="cover";
     bgBody.style.backgroundRepeat="no-repeat";
     bgBody.style.color="black";
