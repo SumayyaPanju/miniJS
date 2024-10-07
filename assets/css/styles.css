@@ -1,103 +1,107 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 /*General styling*/
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 /*Body Styling*/
 body {
-    background: url(../images/background-index.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: Acme;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    }
+  background: url(../images/background-index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Acme;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /*Font Styling*/
-h1, h3, button, #feedback{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    letter-spacing: 3px;
+h1,
+h3,
+button,
+#feedback {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  letter-spacing: 3px;
 }
 
-h3{
-    color: rgb(220, 63, 20);
+h3 {
+  color: rgb(220, 63, 20);
 }
 
-li, p {
-    letter-spacing: 2px;
-    font-weight: bold;
+li,
+p {
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-a:hover{
-    color:forestgreen;
+a:hover {
+  color: forestgreen;
 }
 
-#bg-para{
-    margin-left: 10%;
+#bg-para {
+  margin-left: 10%;
 }
 
 /*Table of content - Index page*/
-#content{
-    margin-left: 10%;
+#content {
+  margin-left: 10%;
 }
 
 /*Background colour page container*/
 
-#background-body{
-    background: url(none);
-    background-color: lightblue;
+#background-body {
+  background: url(none);
+  background-color: lightblue;
 }
-#container-for-bg-colour{
-    background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 80%;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 10%;
-    border: 1px solid black;
+#container-for-bg-colour {
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  border: 1px solid black;
 }
 
 /*Background paragraphs*/
-#bg-para{
-    margin-left: 10%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-right:10%;
-    text-align: center;
-    font-size: 90%;
+#bg-para {
+  margin-left: 10%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 90%;
 }
 
 /*Background buttons*/
-.bg-button{
-    width: 35%;
-    padding: 3%;
-    margin: 10px;
-    border-radius: 10px;
-    font-weight: 900;
-    text-transform: uppercase;
-    border: none;
-    font-size: 90%;
-    background-color: orange;
+.bg-button {
+  width: 35%;
+  padding: 3%;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: none;
+  font-size: 90%;
+  background-color: orange;
 }
 
 /*Footer styling*/
-footer{
-    text-align: center;
-    margin-top: auto;
-    margin-bottom: 10px;
-    font-weight:bolder;
-    padding-top: 20px;
+footer {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  padding-top: 20px;
 }
