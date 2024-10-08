@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <title>Change Background colour</title>
-</head>
-<body id="background-body">
-    <h1>
-        Mini JS Project
-    </h1>
-    <h3 id="heading-three">
-        Change Background colour
-    </h3>
-   <p id="bg-para">
-        Choose your background preference. This will change the background colour and the font colour for easy readability. 
+  </head>
+  <body id="background-body">
+    <h1>Mini JS Project</h1>
+    <h3 id="heading-three">Change Background colour</h3>
+    <p id="bg-para">
+      Choose your background preference. This will change the background colour
+      and the font colour for easy readability.
     </p>
-<div id="container-for-bg-colour">
-<button class="bg-button" id="bg-black" onclick="blackFunction()">
-    Black
-</button>
-<button class="bg-button"  id="bg-green" onclick="greenFunction()">
-    Green
-</button>
-<button class="bg-button"  id="bg-red" onclick="redFunction()">
-    Red
-</button>
-<button class="bg-button"  id="bg-blue" onclick="blueFunction()">
-    Blue
-</button>
-<button class="bg-button"  id="bg-forest" onclick="forestFunction()">
-    Forest
-</button>
-<button class="bg-button"  id="bg-ocean" onclick="oceanFunction()">
-    Ocean
-</button>
-<button class="bg-button"  id="bg-universe" onclick="universeFunction()">
-    Universe
-</button>
-<button class="bg-button"  id="bg-autumn" onclick="autumnFunction()">
-    Autumn
-</button>
-</div>
-<div id="feedback">
-</div>
+    <div id="container-for-bg-colour">
+      <button
+        class="bg-button"
+        id="bg-black"
+        onClick="setBg('black'), setPara('white'), setHeading('yellow')"
+      >
+        Black
+      </button>
+      <button
+        class="bg-button"
+        id="bg-green"
+        onClick="setBg('green'), setPara('white'), setHeading('yellow')"
+      >
+        Green
+      </button>
+      <button
+        class="bg-button"
+        id="bg-red"
+        onClick="setBg('red'), setPara('white'), setHeading('yellow')"
+      >
+        Red
+      </button>
+      <button
+        class="bg-button"
+        id="bg-blue"
+        onClick="setBg('blue'), setPara('white'), setHeading('yellow')"
+      >
+        Blue
+      </button>
+      <button
+        class="bg-button"
+        id="bg-pink"
+        onClick="setBg('pink'), setPara('black'), setHeading('purple')"
+      >
+        Pink
+      </button>
+      <button
+        class="bg-button"
+        id="bg-random"
+        onClick="setRandom(), setPara('white'), setHeading('yellow')"
+        ;
+      >
+        Random
+      </button>
+    </div>
+    <div id="feedback"></div>
     <footer>
-        <p>&#169; Copyright 2024</p>
+      <p>&#169; Copyright 2024</p>
     </footer>
     <script src="assets/scripts/scripts.js"></script>
-</body>
+  </body>
 </html>

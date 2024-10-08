@@ -1,204 +1,42 @@
-/*The following code adds a hover effect when button is hovered depending on which button is hovered. It also changes the background colour and font color when the button is clicked*/
-
-//Variables for buttons:
-
-const buttonBlack = document.getElementById("bg-black");
-
-const buttonGreen = document.getElementById("bg-green");
-
-const buttonRed = document.getElementById("bg-red");
-
-const buttonBlue = document.getElementById("bg-blue");
-
-const buttonForest = document.getElementById("bg-forest");
-
-const buttonOcean = document.getElementById("bg-ocean");
-
-const buttonUniverse = document.getElementById("bg-universe");
-
-const buttonAutumn = document.getElementById("bg-autumn");
+//Step 1: Create variables
 
 const bgBody = document.getElementsByTagName("body")[0];
+const bgPara = document.getElementById("bg-para");
+const bgTitle = document.getElementsByTagName("h1")[0];
+const bgHeading = document.getElementById("heading-three");
+const bgFooter = document.getElementsByTagName("footer")[0];
 
-const headingThree = document.getElementById("heading-three");
+//Step 2: Create Functions on click
 
-const feedback = document.getElementById("feedback");
-
-//Black button - On Hover
-
-buttonBlack.addEventListener("mouseover", () => {
-  buttonBlack.style.backgroundColor = "black";
-  buttonBlack.style.color = "white";
-});
-
-//Black button - off hover
-buttonBlack.addEventListener("mouseout", () => {
-  buttonBlack.style.backgroundColor = "";
-  buttonBlack.style.color = "";
-});
-
-//Black button - on Click
-function blackFunction() {
-  bgBody.style.backgroundColor = "black";
-  bgBody.style.color = "white";
-  headingThree.style.color = "yellow";
-  feedback.innerHTML = `<p>Background colour changed to Black!</p>`;
+function setBg(bgColor) {
+  bgBody.style.backgroundColor = bgColor;
 }
 
-//Green button - On hover
-
-buttonGreen.addEventListener("mouseover", () => {
-  buttonGreen.style.backgroundColor = "green";
-  buttonGreen.style.color = "white";
-});
-
-//Green button - off hover
-buttonGreen.addEventListener("mouseout", () => {
-  buttonGreen.style.backgroundColor = "";
-  buttonGreen.style.color = "";
-});
-
-//Green button - on Click
-function greenFunction() {
-  bgBody.style.backgroundColor = "green";
-  bgBody.style.color = "white";
-  headingThree.style.color = "yellow";
-  feedback.innerHTML = `<p>Background colour changed to Green!</p>`;
+function setPara(paraColor) {
+  bgPara.style.color = paraColor;
+  bgTitle.style.color = paraColor;
+  bgFooter.style.color = paraColor;
 }
 
-//Red button - On hover
-
-buttonRed.addEventListener("mouseover", () => {
-  buttonRed.style.backgroundColor = "red";
-  buttonRed.style.color = "white";
-});
-
-//Red button - Off hover
-
-buttonRed.addEventListener("mouseout", () => {
-  buttonRed.style.backgroundColor = "";
-  buttonRed.style.color = "";
-});
-
-//Red button - on Click
-function redFunction() {
-  bgBody.style.backgroundColor = "red";
-  bgBody.style.color = "white";
-  headingThree.style.color = "yellow";
-  feedback.innerHTML = `<p>Background colour changed to Red!</p>`;
+function setHeading(headingColor) {
+  bgHeading.style.color = headingColor;
 }
 
-//Blue button - On hover
+//Step 3. Link JS function to HTML document
+/* For buttons on HTML document add an attribute onClick="setBg('bgColor'), setPara('paraColor'), setHeading('headingColor')". The color desired should be specified within this attribute properties*/
 
-buttonBlue.addEventListener("mouseover", () => {
-  buttonBlue.style.backgroundColor = "blue";
-  buttonBlue.style.color = "white";
-});
+//Step 4: Create function for random button
 
-//Blue button - Off hover
+/*To do this, variable for red, green, blue needs to be created. For each variable a maths calculation is created where a random number is generated, and then multiplied by 255. This number is then rounded to give whole figure. This value is obtained to give a RGB value. */
 
-buttonBlue.addEventListener("mouseout", () => {
-  buttonBlue.style.backgroundColor = "";
-  buttonBlue.style.color = "";
-});
+function setRandom() {
+  const red = Math.round(Math.random() * 255);
+  const green = Math.round(Math.random() * 255);
+  const blue = Math.round(Math.random() * 255);
 
-//Blue button - on Click
-function blueFunction() {
-  bgBody.style.backgroundColor = "blue";
-  bgBody.style.color = "white";
-  headingThree.style.color = "yellow";
-  feedback.innerHTML = `<p>Background colour changed to Blue!</p>`;
+  const bgColor = `rgb(${red}, ${green}, ${blue})`;
+  bgBody.style.backgroundColor = bgColor;
 }
 
-//Forest button - On hover
-
-buttonForest.addEventListener("mouseover", () => {
-  buttonForest.style.backgroundImage = "url('../assets/images/forest.avif')";
-  buttonForest.style.color = "white";
-});
-
-//Forest button - Off hover
-
-buttonForest.addEventListener("mouseout", () => {
-  buttonForest.style.backgroundImage = "";
-  buttonForest.style.color = "";
-});
-
-//Forest button - on Click
-function forestFunction() {
-  bgBody.style.backgroundImage = "url('../assets/images/forest.avif')";
-  bgBody.style.backgroundSize = "cover";
-  bgBody.style.backgroundRepeat = "no-repeat";
-  bgBody.style.color = "white";
-  headingThree.style.color = "yellow";
-  feedback.innerHTML = `<p>Background colour changed to Forest!</p>`;
-}
-
-//Ocean button - On hover
-
-buttonOcean.addEventListener("mouseover", () => {
-  buttonOcean.style.backgroundImage = "url('../assets/images/ocean.avif')";
-  buttonOcean.style.color = "white";
-});
-
-//Ocean button - Off hover
-
-buttonOcean.addEventListener("mouseout", () => {
-  buttonOcean.style.backgroundImage = "";
-  buttonOcean.style.color = "";
-});
-
-//Ocean button - on Click
-function oceanFunction() {
-  bgBody.style.backgroundImage = "url('../assets/images/ocean.avif')";
-  bgBody.style.backgroundSize = "cover";
-  bgBody.style.backgroundRepeat = "no-repeat";
-  feedback.innerHTML = `<p>Background colour changed to Ocean!</p>`;
-}
-
-//Universe button - On hover
-
-buttonUniverse.addEventListener("mouseover", () => {
-  buttonUniverse.style.backgroundImage = "url('../assets/images/universe.jpg')";
-  buttonUniverse.style.color = "white";
-});
-
-//Universe button - Off hover
-
-buttonUniverse.addEventListener("mouseout", () => {
-  buttonUniverse.style.backgroundImage = "";
-  buttonUniverse.style.color = "";
-});
-
-//Universe button - on Click
-function universeFunction() {
-  bgBody.style.backgroundImage = "url('../assets/images/universe.jpg')";
-  bgBody.style.backgroundSize = "cover";
-  bgBody.style.backgroundRepeat = "no-repeat";
-  bgBody.style.color = "white";
-  headingThree.style.color = "yellow";
-  feedback.innerHTML = `<p>Background colour changed to Universe!</p>`;
-}
-
-//Autumn button - On hover
-
-buttonAutumn.addEventListener("mouseover", () => {
-  buttonAutumn.style.backgroundImage = "url('../assets/images/autumn.avif')";
-  buttonAutumn.style.color = "white";
-});
-
-//Autumn button - Off hover
-
-buttonAutumn.addEventListener("mouseout", () => {
-  buttonAutumn.style.backgroundImage = "";
-  buttonAutumn.style.color = "";
-});
-
-//Autumn button - on Click
-function autumnFunction() {
-  bgBody.style.backgroundImage = "url('../assets/images/autumn.avif')";
-  bgBody.style.backgroundSize = "cover";
-  bgBody.style.backgroundRepeat = "no-repeat";
-  bgBody.style.color = "black";
-  feedback.innerHTML = `<p>Background colour changed to Autumn!</p>`;
-}
+//Step 5. Link JS to HTML button
+/* For buttons on HTML document add an attribute onClick="setRandom()"*/
